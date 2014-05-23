@@ -9,8 +9,7 @@
 #import "CBService+SCPCoreBluetoothManager.h"
 
 #import "SCPCoreBluetoothCentralManager.h"
-
-#import "CBPeripheral+SCPCoreBluetoothManager.h"
+#import "SCPCoreBluetoothManagerCategories.h"
 
 @implementation CBService (SCPCoreBluetoothManager)
 

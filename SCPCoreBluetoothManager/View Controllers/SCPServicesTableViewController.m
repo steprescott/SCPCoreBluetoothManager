@@ -10,7 +10,6 @@
 #import "SCPCharacteristicsTableViewController.h"
 
 #import "SCPCoreBluetoothCentralManager.h"
-#import "CBService+SCPCoreBluetoothManager.h"
 
 static NSString *cellIdentifier = @"cell";
 
