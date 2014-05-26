@@ -10,6 +10,7 @@
 
 @interface NSData (SCPCoreBluetoothManager)
 
++ (NSString *)hexStringFromNSData:(NSData *)data;
 - (NSString *)hexString;
 
 @end

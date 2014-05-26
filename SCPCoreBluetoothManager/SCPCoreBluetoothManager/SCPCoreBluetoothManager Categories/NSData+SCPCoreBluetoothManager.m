@@ -10,6 +10,21 @@
 
 @implementation NSData (SCPCoreBluetoothManager)
 
++ (NSString *)hexStringFromNSData:(NSData *)data
+{
+    NSUInteger capacity = [data length] * 2;
+	
+    NSMutableString *string = [NSMutableString stringWithCapacity:capacity];
+    const unsigned char *dataBuffer = [data bytes];
+	
+    for (NSUInteger i = 0; i < [data length]; ++i)
+    {
+        [string appendFormat:@"%02lX", (unsigned long)dataBuffer[i]];
+    }
+	
+	return string;
+}
+
 - (NSString *)hexString
 {
     NSUInteger capacity = [self length] * 2;
