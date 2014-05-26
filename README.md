@@ -1,14 +1,14 @@
 #SCPCoreBluetoothManager
-=======================
+=========
 
 Block based wrapper around the Core Bluetooth framework. This is only v1.0 and only includes the Central Manager part, the Peripheral Manager part is still in development.
 
 ###Requirements
-=======================
+=========
 Core Bluetooth
 
 ###Installation
-=======================
+=========
 Note the demo uses cocoapods to include the SVProgressHUD dependency so you need to run the `pod install` command via terminal.
 1. Add this repo as a submodule or download it as a .zip
 2. Within the demo project you will see a folder named **SCPCoreBluetoothManager**. This folder contains all the required files.
@@ -16,7 +16,7 @@ Note the demo uses cocoapods to include the SVProgressHUD dependency so you need
 4. When you wish to use the framework, import the framework into your implementation with `#import "SCPCoreBluetoothManger.h"`
 
 ###The basics
-=======================
+=========
 A basic understanding of how transmission between two Bluetooth Low Energy (BLE) devices. One of the devices should act as a **central manager** and another being the **peripheral**.
 
 The central manager handles the listening of peripherals and reads data from them, the peripheral manager deals with the broadcasting of services, characteristics and their values.
@@ -42,11 +42,11 @@ dispatch_sync(dispatch_get_main_queue(), ^{
 ```
 
 ##SCPCoreBluetoothCentralManager
-=======================
+==================
 This 1st part focuses on the reading of peripherals, services and characteristics.
 
 ###Usage
-=======================
+=========
 You first need to start up the central manager.
 Add a property of SCPCoreBluetoothCentralManager to your class and init up a new instance. `self.centralManger = [[SCPCoreBluetoothCentralManager alloc] init];`
 
