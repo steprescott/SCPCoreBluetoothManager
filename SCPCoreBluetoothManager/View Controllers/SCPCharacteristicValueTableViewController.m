@@ -10,10 +10,6 @@
 
 #import "SCPCoreBluetoothCentralManager.h"
 
-#import "CBCharacteristic+SCPCoreBluetoothManager.h"
-#import "NSData+SCPCoreBluetoothManager.h"
-#import "NSString+SCPCoreBluetoothManager.h"
-
 typedef NS_ENUM(NSUInteger, TableViewSection) {
     TableViewSectionHexString = 0,
     TableViewSectionASCIIString,

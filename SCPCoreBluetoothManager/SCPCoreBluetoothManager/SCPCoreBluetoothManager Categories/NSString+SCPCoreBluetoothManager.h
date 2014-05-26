@@ -11,5 +11,6 @@
 @interface NSString (SCPCoreBluetoothManager)
 
 + (NSString *)stringFromHexString:(NSString *)hexString;
+- (NSString *)ASCIIStringFromHexString;
 
 @end

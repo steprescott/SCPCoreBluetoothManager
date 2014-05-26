@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import CoreBluetooth;
 
-#import "CBPeripheral+SCPCoreBluetoothManager.h"
+#import "SCPCoreBluetoothManagerCategories.h"
 #import "SCPCoreBluetoothManagerBlocks.h"
 
 @interface SCPCoreBluetoothCentralManager : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate>

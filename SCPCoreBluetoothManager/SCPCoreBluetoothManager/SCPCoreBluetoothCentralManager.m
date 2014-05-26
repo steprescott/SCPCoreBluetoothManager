@@ -7,7 +7,6 @@
 //
 
 #import "SCPCoreBluetoothCentralManager.h"
-#import "NSData+SCPCoreBluetoothManager.h"
 
 @interface SCPCoreBluetoothCentralManager ()
 
