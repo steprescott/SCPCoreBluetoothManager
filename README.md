@@ -1,5 +1,4 @@
 #SCPCoreBluetoothManager
-=========
 
 Block based wrapper around the Core Bluetooth framework. This is only v1.0 and only includes the Central Manager part, the Peripheral Manager part is still in development.
 
