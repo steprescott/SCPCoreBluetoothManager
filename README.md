@@ -11,7 +11,6 @@ Core Bluetooth
 ## Installation
 
 ### Pod
-
 SCPCoreBluetoothManager is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -25,7 +24,6 @@ Note the demo uses cocoapods to include the SVProgressHUD dependency so you need
 4. When you wish to use the framework, import the framework into your implementation with `#import "SCPCoreBluetoothManger.h"`
 
 ##The basics
-=========
 A basic understanding of how transmission between two Bluetooth Low Energy (BLE) devices. One of the devices should act as a **central manager** and another being the **peripheral**.
 
 The central manager handles the listening of peripherals and reads data from them, the peripheral manager deals with the broadcasting of services, characteristics and their values.
@@ -51,7 +49,6 @@ dispatch_sync(dispatch_get_main_queue(), ^{
 ```
 
 ##SCPCoreBluetoothCentralManager
-==================
 This 1st part focuses on the reading of peripherals, services and characteristics.
 
 ###Usage
