@@ -1,20 +1,30 @@
-#SCPCoreBluetoothManager
+# SCPCoreBluetoothManager
+
+[![CI Status](http://img.shields.io/travis/Steven Prescott/SCPCoreBluetoothManager.svg?style=flat)](https://travis-ci.org/Steven Prescott/SCPCoreBluetoothManager)
+[![Version](https://img.shields.io/cocoapods/v/SCPCoreBluetoothManager.svg?style=flat)](http://cocoadocs.org/docsets/SCPCoreBluetoothManager)
 
 Block based wrapper around the Core Bluetooth framework. This is only v1.0 and only includes the Central Manager part, the Peripheral Manager part is still in development.
 
-###Requirements
+##Required frameworks
 =========
 Core Bluetooth
+## Installation
 
-###Installation
-=========
+### Pod
+
+SCPCoreBluetoothManager is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod 'SCPCoreBluetoothManager'
+
+### Submodule
 Note the demo uses cocoapods to include the SVProgressHUD dependency so you need to run the `pod install` command via terminal.
 1. Add this repo as a submodule or download it as a .zip
 2. Within the demo project you will see a folder named **SCPCoreBluetoothManager**. This folder contains all the required files.
 3. Include this folder into your project.
 4. When you wish to use the framework, import the framework into your implementation with `#import "SCPCoreBluetoothManger.h"`
 
-###The basics
+##The basics
 =========
 A basic understanding of how transmission between two Bluetooth Low Energy (BLE) devices. One of the devices should act as a **central manager** and another being the **peripheral**.
 
@@ -52,6 +62,8 @@ Add a property of SCPCoreBluetoothCentralManager to your class and init up a new
 You now need to start up the central manager. Call the instance method `- (void)startUpSuccess:(StartUpSuccess)success failure:(StartUpFailure)failure;`
 This takes two blocks. The first is called if the central manager is started successfully, the second if there was a problem. 
 The failure block will return a CBCentralManagerState that can be used to determine the problem.
+
+######Example
 ```
 //Start up the central manager
 [_centralManger startUpSuccess:^{
@@ -112,6 +124,8 @@ If an array of 'CBUUID's is given it will only return peripherals that are broad
 The allowDuplicates BOOL specifies whether the scan should run without duplicate filtering.
 Finally a block that will be called when a new peripheral is found. This will return the peripheral, its advertisement data and its RSSI.
 RSSI is the current received signal strength indicator (RSSI) of the peripheral, in decibels.
+
+######Example
 ```
 //Check that the central manager is ready to scan
 if([_centralManger isReady])
@@ -135,6 +149,7 @@ Now you have found the peripherals you are interested in you should now attempt 
 
 The fisrt block will be called upon successful connection to the peripheral and will return the peripheral that it connected to, the failure block will be called if there was ever a problem connecting to the peripheral along with the error.
 
+######Example
 ```
 [peripheral connectSuccess:^(CBPeripheral *peripheral) {
     NSLog(@"Connected to peripheral '%@'", [peripheral name]);
@@ -151,6 +166,8 @@ Again just like the `scanForPeripheralsWithServices` method it takes an array of
 The first block will be called upon discovery of all the services for the connected peripheral. If an array was provided for the 'discoverServices' parameter then this will be a filtered array only showing the services with the CBUUIDs given in the array.
 
 The failure block will be called with an error if there was a problem.
+
+######Example
 ```
 //Discover the services for the newly connected peripheral
 [selectedPeripheral discoverServices:nil //If an array of CBUUIDs is given it will only attempt to discover services with these CBUUIDs
@@ -170,6 +187,7 @@ The second parameter is a block that will be called when the characteristics are
 
 The last parameter is the failure block, for whatever reason an NSError is returned to the block.
 
+######Example
 ```
 [service discoverCharacteristics:nil //If an array of CBUUIDs is given it will only look for the services with that CBUUID
                          success:^(NSArray *discoveredCharacteristics) {
@@ -184,6 +202,8 @@ Now you have found the characteristic you are interested in you can read it's va
 
 This block will return NSData that can then be converted into a HEX string using the category method `hexString`.
 Then this HEX string can be converted to an ASCII representation using the `ASCIIStringFromHexString` category method.
+
+######Example
 ```
 [characteristic setDidUpdateValueBlock:^(NSData *updatedValue) {
     NSString *hexString = [updatedValue hexString];
@@ -199,6 +219,8 @@ Then this HEX string can be converted to an ASCII representation using the `ASCI
 ```
 
 Once this block is set you need to request the value from the characteristic using the `readValue` method.
+
+######Example
 ```
 [characteristic readValue];
 ``` 
@@ -206,3 +228,18 @@ Once this block is set you need to request the value from the characteristic usi
 The updated value will be returned to the didUpdateValueBlock and can be dealt with from there.
 
 That is it, you should now be able to discover all that is needed and read values. Testing for subscription services are ongoing as well as write characteristics as I am still building the Peripheral Manager part.
+
+##Contact
+
+twitter : [@ste_prescott](https://twitter.com/ste_prescott "Twitter account")
+
+##License
+This project made available under the MIT License.
+
+Copyright (C) 2014 Ste Prescott
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

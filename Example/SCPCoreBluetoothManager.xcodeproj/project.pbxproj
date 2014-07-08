@@ -22,16 +22,16 @@
 		4A2DA9031913F79600D16CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2DA8E21913F79600D16CC0 /* UIKit.framework */; };
 		4A2DA90B1913F79600D16CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A2DA9091913F79600D16CC0 /* InfoPlist.strings */; };
 		4A2DA90D1913F79600D16CC0 /* SCPCoreBluetoothManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DA90C1913F79600D16CC0 /* SCPCoreBluetoothManagerTests.m */; };
-		4A2DA9191913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DA9181913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.m */; };
-		4AD13FED192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FE4192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.m */; };
-		4AD13FEE192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FE6192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.m */; };
-		4AD13FEF192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FE8192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.m */; };
-		4AD13FF0192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FEA192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.m */; };
-		4AD13FF1192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FEC192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.m */; };
 		4AD13FFB192D6C9600E746CC /* SCPCharacteristicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FF4192D6C9600E746CC /* SCPCharacteristicsTableViewController.m */; };
 		4AD13FFC192D6C9600E746CC /* SCPCharacteristicValueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FF6192D6C9600E746CC /* SCPCharacteristicValueTableViewController.m */; };
 		4AD13FFD192D6C9600E746CC /* SCPPeripheralsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FF8192D6C9600E746CC /* SCPPeripheralsTableViewController.m */; };
 		4AD13FFE192D6C9600E746CC /* SCPServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD13FFA192D6C9600E746CC /* SCPServicesTableViewController.m */; };
+		A5B4A0C0196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0B1196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.m */; };
+		A5B4A0C1196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0B4196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.m */; };
+		A5B4A0C2196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0B6196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.m */; };
+		A5B4A0C3196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0B8196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.m */; };
+		A5B4A0C4196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0BA196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.m */; };
+		A5B4A0C5196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4A0BC196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,20 +63,6 @@
 		4A2DA9081913F79600D16CC0 /* SCPCoreBluetoothManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCPCoreBluetoothManagerTests-Info.plist"; sourceTree = "<group>"; };
 		4A2DA90A1913F79600D16CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A2DA90C1913F79600D16CC0 /* SCPCoreBluetoothManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPCoreBluetoothManagerTests.m; sourceTree = "<group>"; };
-		4A2DA9171913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothCentralManager.h; sourceTree = "<group>"; };
-		4A2DA9181913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPCoreBluetoothCentralManager.m; sourceTree = "<group>"; };
-		4A5D846E192FB0AF00D1D6C0 /* SCPCoreBluetoothManagerCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothManagerCategories.h; sourceTree = "<group>"; };
-		4AD13FDB192D5FB600E746CC /* SCPCoreBluetoothManagerBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothManagerBlocks.h; sourceTree = "<group>"; };
-		4AD13FE3192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBCharacteristic+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
-		4AD13FE4192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBCharacteristic+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
-		4AD13FE5192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
-		4AD13FE6192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
-		4AD13FE7192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
-		4AD13FE8192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
-		4AD13FE9192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
-		4AD13FEA192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
-		4AD13FEB192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
-		4AD13FEC192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
 		4AD13FF3192D6C9600E746CC /* SCPCharacteristicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCharacteristicsTableViewController.h; sourceTree = "<group>"; };
 		4AD13FF4192D6C9600E746CC /* SCPCharacteristicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPCharacteristicsTableViewController.m; sourceTree = "<group>"; };
 		4AD13FF5192D6C9600E746CC /* SCPCharacteristicValueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCharacteristicValueTableViewController.h; sourceTree = "<group>"; };
@@ -86,6 +72,20 @@
 		4AD13FF9192D6C9600E746CC /* SCPServicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPServicesTableViewController.h; sourceTree = "<group>"; };
 		4AD13FFA192D6C9600E746CC /* SCPServicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPServicesTableViewController.m; sourceTree = "<group>"; };
 		6075B8D31A174D4E8041816A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A5B4A0B0196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothCentralManager.h; sourceTree = "<group>"; };
+		A5B4A0B1196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPCoreBluetoothCentralManager.m; sourceTree = "<group>"; };
+		A5B4A0B3196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBCharacteristic+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
+		A5B4A0B4196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBCharacteristic+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
+		A5B4A0B5196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
+		A5B4A0B6196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
+		A5B4A0B7196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
+		A5B4A0B8196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
+		A5B4A0B9196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
+		A5B4A0BA196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
+		A5B4A0BB196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SCPCoreBluetoothManager.h"; sourceTree = "<group>"; };
+		A5B4A0BC196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SCPCoreBluetoothManager.m"; sourceTree = "<group>"; };
+		A5B4A0BD196C3B210041ECF8 /* SCPCoreBluetoothManagerCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothManagerCategories.h; sourceTree = "<group>"; };
+		A5B4A0BE196C3B210041ECF8 /* SCPCoreBluetoothManagerBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPCoreBluetoothManagerBlocks.h; sourceTree = "<group>"; };
 		FA8A7250205A4F7D9EED36CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,8 +153,8 @@
 				4A2DA8F31913F79600D16CC0 /* Main_iPad.storyboard */,
 				4A2DA8ED1913F79600D16CC0 /* SCPAppDelegate.h */,
 				4A2DA8EE1913F79600D16CC0 /* SCPAppDelegate.m */,
+				A5B4A0AE196C3B210041ECF8 /* Classes */,
 				4AD13FF2192D6C9600E746CC /* View Controllers */,
-				4A2DA9161913F7D500D16CC0 /* SCPCoreBluetoothManager */,
 				4A2DA8F91913F79600D16CC0 /* Images.xcassets */,
 				4A2DA8E51913F79600D16CC0 /* Supporting Files */,
 			);
@@ -190,35 +190,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4A2DA9161913F7D500D16CC0 /* SCPCoreBluetoothManager */ = {
-			isa = PBXGroup;
-			children = (
-				4AD13FDB192D5FB600E746CC /* SCPCoreBluetoothManagerBlocks.h */,
-				4A2DA9171913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.h */,
-				4A2DA9181913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.m */,
-				4AD13FE2192D6BE600E746CC /* SCPCoreBluetoothManager Categories */,
-			);
-			path = SCPCoreBluetoothManager;
-			sourceTree = "<group>";
-		};
-		4AD13FE2192D6BE600E746CC /* SCPCoreBluetoothManager Categories */ = {
-			isa = PBXGroup;
-			children = (
-				4A5D846E192FB0AF00D1D6C0 /* SCPCoreBluetoothManagerCategories.h */,
-				4AD13FE5192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.h */,
-				4AD13FE6192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.m */,
-				4AD13FE7192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.h */,
-				4AD13FE8192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.m */,
-				4AD13FE3192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.h */,
-				4AD13FE4192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.m */,
-				4AD13FE9192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.h */,
-				4AD13FEA192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.m */,
-				4AD13FEB192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.h */,
-				4AD13FEC192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.m */,
-			);
-			path = "SCPCoreBluetoothManager Categories";
-			sourceTree = "<group>";
-		};
 		4AD13FF2192D6C9600E746CC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +203,35 @@
 				4AD13FF6192D6C9600E746CC /* SCPCharacteristicValueTableViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A5B4A0AE196C3B210041ECF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5B4A0B0196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.h */,
+				A5B4A0B1196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.m */,
+				A5B4A0BE196C3B210041ECF8 /* SCPCoreBluetoothManagerBlocks.h */,
+				A5B4A0B2196C3B210041ECF8 /* SCPCoreBluetoothManager Categories */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A5B4A0B2196C3B210041ECF8 /* SCPCoreBluetoothManager Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A5B4A0BD196C3B210041ECF8 /* SCPCoreBluetoothManagerCategories.h */,
+				A5B4A0B3196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.h */,
+				A5B4A0B4196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.m */,
+				A5B4A0B5196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.h */,
+				A5B4A0B6196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.m */,
+				A5B4A0B7196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.h */,
+				A5B4A0B8196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.m */,
+				A5B4A0B9196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.h */,
+				A5B4A0BA196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.m */,
+				A5B4A0BB196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.h */,
+				A5B4A0BC196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.m */,
+			);
+			path = "SCPCoreBluetoothManager Categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,18 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD13FF0192D6BE600E746CC /* NSData+SCPCoreBluetoothManager.m in Sources */,
+				A5B4A0C0196C3B210041ECF8 /* SCPCoreBluetoothCentralManager.m in Sources */,
 				4AD13FFC192D6C9600E746CC /* SCPCharacteristicValueTableViewController.m in Sources */,
-				4AD13FED192D6BE600E746CC /* CBCharacteristic+SCPCoreBluetoothManager.m in Sources */,
 				4AD13FFB192D6C9600E746CC /* SCPCharacteristicsTableViewController.m in Sources */,
-				4A2DA9191913F7E800D16CC0 /* SCPCoreBluetoothCentralManager.m in Sources */,
 				4AD13FFE192D6C9600E746CC /* SCPServicesTableViewController.m in Sources */,
 				4A2DA8EB1913F79600D16CC0 /* main.m in Sources */,
+				A5B4A0C4196C3B210041ECF8 /* NSData+SCPCoreBluetoothManager.m in Sources */,
+				A5B4A0C3196C3B210041ECF8 /* CBService+SCPCoreBluetoothManager.m in Sources */,
+				A5B4A0C2196C3B210041ECF8 /* CBPeripheral+SCPCoreBluetoothManager.m in Sources */,
+				A5B4A0C5196C3B210041ECF8 /* NSString+SCPCoreBluetoothManager.m in Sources */,
 				4AD13FFD192D6C9600E746CC /* SCPPeripheralsTableViewController.m in Sources */,
-				4AD13FEF192D6BE600E746CC /* CBService+SCPCoreBluetoothManager.m in Sources */,
+				A5B4A0C1196C3B210041ECF8 /* CBCharacteristic+SCPCoreBluetoothManager.m in Sources */,
 				4A2DA8EF1913F79600D16CC0 /* SCPAppDelegate.m in Sources */,
-				4AD13FEE192D6BE600E746CC /* CBPeripheral+SCPCoreBluetoothManager.m in Sources */,
-				4AD13FF1192D6BE600E746CC /* NSString+SCPCoreBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +523,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCPCoreBluetoothManager/SCPCoreBluetoothManager-Prefix.pch";
 				INFOPLIST_FILE = "SCPCoreBluetoothManager/SCPCoreBluetoothManager-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SCPCoreBluetoothManager/Classes/SCPStoreKitReceiptValidator/openSSL/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -540,6 +544,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCPCoreBluetoothManager/SCPCoreBluetoothManager-Prefix.pch";
 				INFOPLIST_FILE = "SCPCoreBluetoothManager/SCPCoreBluetoothManager-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SCPCoreBluetoothManager/Classes/SCPStoreKitReceiptValidator/openSSL/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
