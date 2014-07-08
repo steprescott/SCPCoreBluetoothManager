@@ -1,7 +1,4 @@
-# SCPCoreBluetoothManager
-
-[![CI Status](http://img.shields.io/travis/Steven Prescott/SCPCoreBluetoothManager.svg?style=flat)](https://travis-ci.org/Steven Prescott/SCPCoreBluetoothManager)
-[![Version](https://img.shields.io/cocoapods/v/SCPCoreBluetoothManager.svg?style=flat)](http://cocoadocs.org/docsets/SCPCoreBluetoothManager)
+# SCPCoreBluetoothManager [![Version](https://img.shields.io/cocoapods/v/SCPCoreBluetoothManager.svg?style=flat)](http://cocoadocs.org/docsets/SCPCoreBluetoothManager)
 
 Block based wrapper around the Core Bluetooth framework. This is only v1.0 and only includes the Central Manager part, the Peripheral Manager part is still in development.
 
