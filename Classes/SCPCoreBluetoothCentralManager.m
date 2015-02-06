@@ -23,7 +23,6 @@
 	dispatch_queue_t backgroundQueue = dispatch_queue_create("me.ste.SCPCoreBluetoothCentralManager.queue", NULL);
 	
 	self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:backgroundQueue];
-	
 	self.startUpSuccessBlock = success;
 	self.startUpFailureBlock = failure;
 }
@@ -246,6 +245,21 @@
 	{
 		_didDisconnectFromPeripheralBlock((CBPeripheral *)peripheral);
 	}
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+    if(error)
+    {
+        if(_characteristicSubscriptionFailureBlock)
+        {
+            _characteristicSubscriptionFailureBlock(error);
+        }
+        return;
+    }
+
+    if (_didWriteValueForCharacteristicBlock) {
+        _didWriteValueForCharacteristicBlock([characteristic value]);
+    }
 }
 
 - (void)stopScanning

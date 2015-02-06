@@ -19,6 +19,8 @@
 
 - (void)connectSuccess:(ConnectToPeripheralSuccess)success failure:(ConnectToPeripheralFailure)failure;
 - (void)discoverServices:(NSArray *)services success:(DidDiscoverServicesSuccess)success failure:(DidDiscoverServicesFailure)failure;
+- (void)setDidWriteValueForCharacteristicBlock:(DidWriteValueForCharacteristic)didWriteValueForCharacteristicBlock;
+- (void)writeValue:(NSData *)data forCharacteristic:(CBCharacteristic *)characteristic;
 - (void)disconnect;
 
 @end
