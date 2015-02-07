@@ -48,6 +48,16 @@ static NSString *centralMangerKey = @"me.ste.centralManagerKey";
                                   }];
 }
 
+- (void)setDidWriteValueForCharacteristicBlock:(DidWriteValueForCharacteristic)didWriteValueForCharacteristicBlock
+{
+    [[self centralManager] setDidWriteValueForCharacteristicBlock:didWriteValueForCharacteristicBlock];
+}
+
+- (void)writeValue:(NSData *)data forCharacteristic:(CBCharacteristic *)characteristic
+{
+    [self writeValue:data forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+}
+
 - (void)disconnect
 {
     [self.centralManager disconnectFromPeripheral:self];

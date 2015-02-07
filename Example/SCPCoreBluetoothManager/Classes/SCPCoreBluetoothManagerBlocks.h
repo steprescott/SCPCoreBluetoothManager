@@ -27,6 +27,8 @@ typedef void(^DidDiscoverCharacteristicsForServiceFailure)(NSError *error);
 
 typedef void(^DidUpdateNotificationStateForCharacteristic)(BOOL isNotifying);
 typedef void(^DidUpdateValueForCharacteristic)(NSData *updatedValue);
+typedef void(^DidWriteValueForCharacteristic)(NSData *returnedValue);
+
 typedef void(^CharacteristicSubscriptionFailure)(NSError *error);
 
 typedef void(^DidDisconnectFromPeripheral)(CBPeripheral *peripheral);

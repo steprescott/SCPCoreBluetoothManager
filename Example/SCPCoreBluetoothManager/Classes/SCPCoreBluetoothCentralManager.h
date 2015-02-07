@@ -32,6 +32,8 @@
 @property (nonatomic, copy) void (^didUpdateValueForCharacteristicBlock)(NSData *updatedValue);
 @property (nonatomic, copy) void (^characteristicSubscriptionFailureBlock)(NSError *error);
 
+@property (nonatomic, copy) void (^didWriteValueForCharacteristicBlock)(NSData *returnedValue);
+
 @property (nonatomic, copy) void (^didDisconnectFromPeripheralBlock)(CBPeripheral *peripheral);
 
 @property (nonatomic, assign) BOOL isReady;
@@ -65,5 +67,6 @@
 - (void)setDidUpdateValueForCharacteristicBlock:(void (^)(NSData *updatedValue))didUpdateValueForCharacteristic;
 - (void)setCharacteristicSubscriptionFailureBlock:(void (^)(NSError *error))characteristicSubscriptionFailure;
 - (void)setDidDisconnectFromPeripheralBlock:(void (^)(CBPeripheral *peripheral))didDisconnectFromPeripheral;
+- (void)setDidWriteValueForCharacteristicBlock:(void (^)(NSData *))didWriteValueForCharacteristic;
 
 @end
