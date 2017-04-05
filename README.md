@@ -2,7 +2,7 @@
 
 Block based wrapper around the Core Bluetooth framework. This is only v1.0 and only includes the Central Manager part, the Peripheral Manager part is still in development.
 
-##Required frameworks
+## Required frameworks
 Core Bluetooth
 
 ## Installation
@@ -20,7 +20,7 @@ Note the demo uses cocoapods to include the SVProgressHUD dependency so you need
 3. Include this folder into your project.
 4. When you wish to use the framework, import the framework into your implementation with `#import "SCPCoreBluetoothManger.h"`
 
-##The basics
+## The basics
 A basic understanding of how transmission between two Bluetooth Low Energy (BLE) devices. One of the devices should act as a **central manager** and another being the **peripheral**.
 
 The central manager handles the listening of peripherals and reads data from them, the peripheral manager deals with the broadcasting of services, characteristics and their values.
@@ -45,10 +45,10 @@ dispatch_sync(dispatch_get_main_queue(), ^{
     });
 ```
 
-##SCPCoreBluetoothCentralManager
+## SCPCoreBluetoothCentralManager
 This 1st part focuses on the reading of peripherals, services and characteristics.
 
-###Usage
+### Usage
 =========
 You first need to start up the central manager.
 Add a property of SCPCoreBluetoothCentralManager to your class and init up a new instance. `self.centralManger = [[SCPCoreBluetoothCentralManager alloc] init];`
@@ -57,7 +57,7 @@ You now need to start up the central manager. Call the instance method `- (void)
 This takes two blocks. The first is called if the central manager is started successfully, the second if there was a problem. 
 The failure block will return a CBCentralManagerState that can be used to determine the problem.
 
-######Example
+###### Example
 ```
 //Start up the central manager
 [_centralManger startUpSuccess:^{
@@ -119,7 +119,7 @@ The allowDuplicates BOOL specifies whether the scan should run without duplicate
 Finally a block that will be called when a new peripheral is found. This will return the peripheral, its advertisement data and its RSSI.
 RSSI is the current received signal strength indicator (RSSI) of the peripheral, in decibels.
 
-######Example
+###### Example
 ```
 //Check that the central manager is ready to scan
 if([_centralManger isReady])
@@ -143,7 +143,7 @@ Now you have found the peripherals you are interested in you should now attempt 
 
 The fisrt block will be called upon successful connection to the peripheral and will return the peripheral that it connected to, the failure block will be called if there was ever a problem connecting to the peripheral along with the error.
 
-######Example
+###### Example
 ```
 [peripheral connectSuccess:^(CBPeripheral *peripheral) {
     NSLog(@"Connected to peripheral '%@'", [peripheral name]);
@@ -161,7 +161,7 @@ The first block will be called upon discovery of all the services for the connec
 
 The failure block will be called with an error if there was a problem.
 
-######Example
+###### Example
 ```
 //Discover the services for the newly connected peripheral
 [selectedPeripheral discoverServices:nil //If an array of CBUUIDs is given it will only attempt to discover services with these CBUUIDs
@@ -181,7 +181,7 @@ The second parameter is a block that will be called when the characteristics are
 
 The last parameter is the failure block, for whatever reason an NSError is returned to the block.
 
-######Example
+###### Example
 ```
 [service discoverCharacteristics:nil //If an array of CBUUIDs is given it will only look for the services with that CBUUID
                          success:^(NSArray *discoveredCharacteristics) {
@@ -197,7 +197,7 @@ Now you have found the characteristic you are interested in you can read it's va
 This block will return NSData that can then be converted into a HEX string using the category method `hexString`.
 Then this HEX string can be converted to an ASCII representation using the `ASCIIStringFromHexString` category method.
 
-######Example
+###### Example
 ```
 [characteristic setDidUpdateValueBlock:^(NSData *updatedValue) {
     NSString *hexString = [updatedValue hexString];
@@ -214,7 +214,7 @@ Then this HEX string can be converted to an ASCII representation using the `ASCI
 
 Once this block is set you need to request the value from the characteristic using the `readValue` method.
 
-######Example
+###### Example
 ```
 [characteristic readValue];
 ``` 
@@ -223,11 +223,11 @@ The updated value will be returned to the didUpdateValueBlock and can be dealt w
 
 That is it, you should now be able to discover all that is needed and read values. Testing for subscription services are ongoing as well as write characteristics as I am still building the Peripheral Manager part.
 
-##Contact
+## Contact
 
 twitter : [@ste_prescott](https://twitter.com/ste_prescott "Twitter account")
 
-##License
+## License
 This project made available under the MIT License.
 
 Copyright (C) 2014 Ste Prescott
